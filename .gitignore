@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+# artefacts volumineux régénérables
+research_smoke*/
+research_runs/
+federation/round_*/
+benchmark_results.zip
+*.tmp
+.turtlebot3_burger.jpg
+test_TurtleBot3Burger*.txt
+controllers/moose_path_following/moose_path_following

@@ -1,0 +1,238 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/CircleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/robotis/turtlebot/protos/TurtleBot3Burger.proto"
+
+WorldInfo {
+  basicTimeStep 64
+}
+
+Viewpoint {
+  orientation 0 1 0 1.57079632679
+  position 0 0 30
+}
+
+TexturedBackground {
+}
+
+TexturedBackgroundLight {
+}
+
+
+DEF ARENA_1 CircleArena {
+  translation -7 0 0
+  name "arena_1"
+  radius 3
+  wallHeight 0.4
+}
+
+
+DEF STATIC_1_1 WoodenBox {
+  translation -8.2 0.8 0.15
+  name "static_1_1"
+  size 0.3 0.3 0.3
+}
+
+
+DEF STATIC_1_2 WoodenBox {
+  translation -5.8 0.8 0.15
+  name "static_1_2"
+  size 0.3 0.3 0.3
+}
+
+
+DEF STATIC_1_3 WoodenBox {
+  translation -7.0 -1.5 0.15
+  name "static_1_3"
+  size 0.3 0.3 0.3
+}
+
+
+DEF OBSTACLE_1 WoodenBox {
+  translation -5.8 -0.8 0.15
+  name "mobile_1"
+  size 0.3 0.3 0.3
+}
+
+
+DEF ROBOT_1 TurtleBot3Burger {
+  translation -7 0 0
+  rotation 0 0 1 0
+  name "robot_1"
+  controller "frl_agent"
+  supervisor FALSE
+  synchronization TRUE
+}
+
+
+DEF ARENA_2 CircleArena {
+  translation 0 0 0
+  name "arena_2"
+  radius 3
+  wallHeight 0.4
+}
+
+
+DEF STATIC_2_1 WoodenBox {
+  translation -1.2 0.8 0.15
+  name "static_2_1"
+  size 0.3 0.3 0.3
+}
+
+
+DEF STATIC_2_2 WoodenBox {
+  translation 1.2 0.8 0.15
+  name "static_2_2"
+  size 0.3 0.3 0.3
+}
+
+
+DEF STATIC_2_3 WoodenBox {
+  translation 0.0 -1.5 0.15
+  name "static_2_3"
+  size 0.3 0.3 0.3
+}
+
+
+DEF STATIC_2_4 WoodenBox {
+  translation -1.5 -0.8 0.15
+  name "static_2_4"
+  size 0.3 0.3 0.3
+}
+
+
+DEF STATIC_2_5 WoodenBox {
+  translation 0.0 1.8 0.15
+  name "static_2_5"
+  size 0.3 0.3 0.3
+}
+
+
+DEF OBSTACLE_2 WoodenBox {
+  translation 1.2 -0.8 0.15
+  name "mobile_2"
+  size 0.3 0.3 0.3
+}
+
+
+DEF OBSTACLE_3 WoodenBox {
+  translation -0.7 1.5 0.15
+  name "mobile_3"
+  size 0.3 0.3 0.3
+}
+
+
+DEF ROBOT_2 TurtleBot3Burger {
+  translation 0 0 0
+  rotation 0 0 1 0
+  name "robot_2"
+  controller "frl_agent"
+  supervisor FALSE
+  synchronization TRUE
+}
+
+
+DEF ARENA_3 CircleArena {
+  translation 7 0 0
+  name "arena_3"
+  radius 3
+  wallHeight 0.4
+}
+
+
+DEF STATIC_3_1 WoodenBox {
+  translation 5.8 0.8 0.15
+  name "static_3_1"
+  size 0.3 0.3 0.3
+}
+
+
+DEF STATIC_3_2 WoodenBox {
+  translation 8.2 0.8 0.15
+  name "static_3_2"
+  size 0.3 0.3 0.3
+}
+
+
+DEF STATIC_3_3 WoodenBox {
+  translation 7.0 -1.5 0.15
+  name "static_3_3"
+  size 0.3 0.3 0.3
+}
+
+
+DEF STATIC_3_4 WoodenBox {
+  translation 5.5 -0.8 0.15
+  name "static_3_4"
+  size 0.3 0.3 0.3
+}
+
+
+DEF STATIC_3_5 WoodenBox {
+  translation 7.0 1.8 0.15
+  name "static_3_5"
+  size 0.3 0.3 0.3
+}
+
+
+DEF STATIC_3_6 WoodenBox {
+  translation 8.8 0 0.15
+  name "static_3_6"
+  size 0.3 0.3 0.3
+}
+
+
+DEF STATIC_3_7 WoodenBox {
+  translation 5.2 0 0.15
+  name "static_3_7"
+  size 0.3 0.3 0.3
+}
+
+
+DEF STATIC_3_8 WoodenBox {
+  translation 7.8 -1.9 0.15
+  name "static_3_8"
+  size 0.3 0.3 0.3
+}
+
+
+DEF OBSTACLE_4 WoodenBox {
+  translation 8.2 -0.8 0.15
+  name "mobile_4"
+  size 0.3 0.3 0.3
+}
+
+
+DEF OBSTACLE_5 WoodenBox {
+  translation 6.3 1.5 0.15
+  name "mobile_5"
+  size 0.3 0.3 0.3
+}
+
+
+DEF OBSTACLE_6 WoodenBox {
+  translation 6.2 -1.6 0.15
+  name "mobile_6"
+  size 0.3 0.3 0.3
+}
+
+
+DEF ROBOT_3 TurtleBot3Burger {
+  translation 7 0 0
+  rotation 0 0 1 0
+  name "robot_3"
+  controller "frl_agent"
+  supervisor FALSE
+  synchronization TRUE
+}
+
+
+DEF ENV_SUPERVISOR Robot {
+  name "superviser"
+  controller "superviser"
+  supervisor TRUE
+  synchronization TRUE
+}

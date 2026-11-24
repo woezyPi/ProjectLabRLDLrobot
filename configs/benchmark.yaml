@@ -1,0 +1,25 @@
+# Benchmark robotique : variantes DQN x mode d'entraînement
+output_dir: research_runs
+seeds: [11, 22, 33]
+
+training:
+  episodes: 150
+  max_steps: 300
+  eval_every: 25          # épisodes
+  eval_episodes: 10
+  learning_rate: 3.0e-4
+  gamma: 0.99
+  batch_size: 64
+  buffer_capacity: 50000
+
+federation:
+  n_clients: 3
+  sync_every: 10          # épisodes
+
+# nom du run -> variante + mode
+experiments:
+  dqn_local:           {double: false, dueling: false, federated: false}
+  ddqn_local:          {double: true,  dueling: false, federated: false}
+  dueling_ddqn_local:  {double: true,  dueling: true,  federated: false}
+  ddqn_fedavg:         {double: true,  dueling: false, federated: true}
+  dueling_ddqn_fedavg: {double: true,  dueling: true,  federated: true}
